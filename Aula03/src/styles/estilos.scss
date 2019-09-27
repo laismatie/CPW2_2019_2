@@ -1,0 +1,72 @@
+@import 'cores';
+@import 'fontes';
+
+body{
+    margin:0;
+}
+
+#header{
+    background-color: $cor-header;
+    padding: 10px 20px; 
+    margin-bottom: 10px;
+    
+    *{
+        display: inline;
+        vertical-align: middle;
+    }
+
+    img{
+        width: 80px;
+        margin-right: 20px;
+    }
+
+    h1{
+        font-family: $fonte-decorativa;
+        color: white;
+        text-shadow: 2px 2px #555;
+    }
+}
+
+#formularioContato{
+
+    padding: 10px;
+    border: 1px solid $cor-borda;
+    width: 95%;
+    margin: auto;
+
+    label, input{
+        display: block;
+        font-family: $fonte-padrao;
+    }
+
+    input{
+        margin-bottom: 10px;
+       
+        height: 25px;
+        font-size: 100%;
+        /*Opcional*/
+        border-radius: 5px;
+        border: 1px solid #aaaaaa;
+        padding-left: 5px;
+
+        &[type=text],&[type=email]{
+            width: 300px;
+        }
+        &[type=tel]{
+            width: 150px;
+        }
+        &[type=date]{
+            width: 150px;
+        }
+        &[type=submit]{
+            padding: 10px 20px;
+            /* none não funciona, inherit é o comportamento 
+            padrão de altura dos componentes externos (form nesse caso)*/
+            height: inherit;
+            background-color: $cor-botao-primario;
+            border: none;
+            color: white;
+        }
+    }
+
+}
