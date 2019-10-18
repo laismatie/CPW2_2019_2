@@ -69,4 +69,12 @@ body {
   color: white;
 }
 
+#listagemContatos {
+  font-family: "padrao";
+  padding: 10px;
+  border: 1px solid #5cc1d8;
+  width: 95%;
+  margin: auto;
+}
+
 /*# sourceMappingURL=estilos.css.map */

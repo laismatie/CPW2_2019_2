@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalho 1</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-png">
+    <link rel="stylesheet" href="src/styles/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img src="src/img/voltar.png" alt="Voltar"></a>
+        <h1>Exercício 4</h1>
+    </div>
+    <div id="texto"> <p>Calculando o Índice de Massa Corporal</p>
+        <div id="dados"><p>IMC < 18.5: Abaixo do peso</p>
+           <p>18.5 <= IMC <= 24.9: Peso normal</p> 
+           <p>24.9 < IMC <= 29.9: Sobrepeso</p> 
+           <p>29.9 < IMC <= 34.9: Obesidade de grau I</p> 
+          <p> 34.9 < IMC <= 39.9: Obesidade de grau II</p> 
+            <p>IMC > 39.9: Obesidade de grau III</p></div></div>
+    <div id="formularioExercicio">
+        <form onsubmit="imc(event)">
+            <label for="peso">Digite o peso:</label>   
+            <input required id ="peso" name = "peso" type="text">
+            <label for="altura">Digite a altura:</label>   
+            <input required id ="altura" name = "altura" type="text">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div id="resposta"></div>
+    <script src="src/js/exercicio4.js"></script>
+    <script src="src/js/mascaras.js"></script>
+</body>
+</html>

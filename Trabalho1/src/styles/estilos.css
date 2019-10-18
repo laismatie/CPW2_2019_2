@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "decorativa";
+  src: url(../fonts/BadScript-Regular.ttf);
+}
+@font-face {
+  font-family: "padrao";
+  src: url(../fonts/Quicksand-Regular.ttf);
+}
+body {
+  margin: 0;
+}
+
+#headerPrincipal {
+  background-color: #263238;
+  padding: 10px;
+  text-align: center;
+}
+#headerPrincipal h1 {
+  font-family: "decorativa";
+  color: white;
+  text-shadow: 1px 1px #555;
+}
+
+#header {
+  background-color: #263238;
+  padding: 20px 10px;
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+#header * {
+  display: table-cell;
+  vertical-align: middle;
+}
+#header a {
+  width: 10%;
+}
+#header a img {
+  width: 55px;
+  margin-left: 10px;
+}
+#header h1 {
+  font-family: "decorativa";
+  color: white;
+  text-shadow: 1px 1px #555;
+  width: 90%;
+  text-align: left;
+}
+
+#container {
+  margin-top: 0px;
+  background-color: #eceff1;
+  text-align: center;
+}
+#container #exercicio {
+  text-decoration: none;
+  padding: 10px;
+}
+#container #exercicio p {
+  font-family: "decorativa";
+  color: #263238;
+  font-size: 30px;
+  margin: auto;
+  border: #263238 solid 1px;
+  background-color: #b0bec5;
+  width: 40%;
+  padding: 10px 20px;
+}
+
+#texto p {
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+  font-family: "padrao";
+  padding: 10px;
+  margin: 5px 10px 0px 10px;
+}
+#texto #dados p {
+  font-size: 115%;
+  font-weight: normal;
+  padding: 3px;
+  margin: 0px 10px 0px 10px;
+}
+
+#formularioExercicio {
+  padding: 10px;
+  border: 1px solid #607d8b;
+  width: 80%;
+  font-size: 108%;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #eceff1;
+  font-family: "padrao";
+}
+#formularioExercicio label, #formularioExercicio input {
+  display: block;
+}
+#formularioExercicio input {
+  margin-bottom: 10px;
+  height: 25px;
+  color: #263238;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+  padding-left: 5px;
+  font-size: 100%;
+}
+#formularioExercicio input[type=submit] {
+  padding: 10px 20px;
+  height: inherit;
+  background-color: #607d8b;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+#formularioExercicio input[type=number] {
+  width: 25%;
+  margin: 5px 0px;
+  height: 30px;
+}
+#formularioExercicio input[type=text] {
+  margin: 5px 0px;
+  width: 90%;
+  height: 30px;
+}
+
+#resposta {
+  padding: 10px;
+  border: 1px solid #607d8b;
+  width: 80%;
+  font-size: 105%;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #eceff1;
+  font-family: "padrao";
+  display: none;
+}
+
+@media (max-width: 700px) {
+  #header a {
+    width: 10%;
+  }
+  #header a img {
+    width: 50px;
+    margin-left: 5px;
+  }
+  #header h1 {
+    font-family: "decorativa";
+    color: white;
+    text-shadow: 1px 1px #555;
+    width: 70%;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

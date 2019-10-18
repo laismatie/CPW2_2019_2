@@ -1,0 +1,162 @@
+@import 'cores';
+@import 'fontes';
+body{
+    margin: 0;
+}
+
+#headerPrincipal{
+    background-color: $cor-header;
+    padding: 10px; 
+    text-align: center;
+    h1{
+        font-family: $fonte-decorativa;
+        color: white;
+        text-shadow: 1px 1px #555;
+    }
+}
+
+#header{
+    background-color: $cor-header;
+    padding: 20px 10px; 
+    text-align: center;
+    display: table;
+    width: 100%;
+
+    * {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    a{
+        width: 10%;
+        img{
+            width: 55px;
+            margin-left: 10px;
+        }
+    }
+    h1{
+        font-family: $fonte-decorativa;
+        color: white;
+        text-shadow: 1px 1px #555;
+        width: 90%;
+        text-align: left;
+    }
+}
+
+#container{
+    margin-top: 0px;
+    background-color: $cor-fundo;
+    text-align: center;
+    
+    #exercicio{
+        text-decoration: none;
+        padding: 10px;
+       
+        p{
+            font-family: $fonte-decorativa;
+            color: $cor-header;
+            font-size: 30px;
+            margin: auto;
+            border: $cor-header solid 1px;
+            background-color: $cor-fundo-botao;
+            width: 40%;
+            padding: 10px 20px;
+        }
+    }
+}
+
+#texto{
+    p{
+        font-size: 120%;
+        font-weight: bold;  
+        text-align: center;
+        font-family: $fonte-padrao;
+        padding: 10px;
+        margin: 5px 10px 0px 10px;
+    }
+    #dados{
+        p{
+            font-size: 115%;
+            font-weight: normal; 
+            padding: 3px;
+            margin: 0px 10px 0px 10px;
+        }
+       
+    }
+}
+#formularioExercicio{
+    padding: 10px;
+    border: 1px solid $cor-botao;
+    width: 80%;
+    font-size: 108%;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 10px;
+    background-color: $cor-fundo;
+    font-family: $fonte-padrao;
+    
+    label, input{
+        display: block;
+    }
+
+    input{
+        margin-bottom: 10px;
+        height: 25px;
+        color: $cor-header;
+        border-radius: 5px;
+        border: 1px solid #aaaaaa;
+        padding-left: 5px;
+        font-size: 100%;
+
+        &[type=submit]{
+            padding: 10px 20px;
+            height: inherit;
+            background-color: $cor-botao;
+            border: none;
+            color: white;
+            margin-top: 10px;
+        }
+        &[type=number]{
+            width: 25%;
+            margin: 5px 0px;
+            height: 30px;
+        }
+        &[type=text]{
+            margin: 5px 0px;
+            width: 90%;
+            height: 30px;
+        }
+    }
+}
+
+#resposta{
+    padding: 10px;
+    border: 1px solid $cor-botao;
+    width: 80%;
+    font-size: 105%;
+    font-weight: bold;
+    margin:auto;
+    margin-top: 20px;
+    background-color: $cor-fundo;
+    font-family: $fonte-padrao;
+    display: none;
+}
+
+@media (max-width: 700px){
+    #header{
+        a{
+            width: 10%;
+            img{
+                width: 50px;
+                margin-left: 5px;
+            }
+        }
+        h1{
+            font-family: $fonte-decorativa;
+            color: white;
+            text-shadow: 1px 1px #555;
+            width: 70%;
+            text-align: left;
+        }
+    }
+}

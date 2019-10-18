@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalho 1</title>
+    <link rel="stylesheet" href="src/styles/estilos.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-png">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img src="src/img/voltar.png" alt="Voltar"></a>
+        <h1>Exercício 1</h1>
+    </div>
+    <div id="texto"><p>Sequência Fibonacci</p>
+        <p>Em uma sequência de Fibonacci, cada valor é a soma dos dois últimos valores da sequência anteriores a ele.</p></div>
+    <div id="formularioExercicio">
+        <form onsubmit="fibonacci(event)">
+            <label for="valor">Informe um valor:</label>   
+            <input required id ="valor" name = "valor" type="number" max="100" min="1">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div id='resposta'></div>
+    <script src="src/js/exercicio1.js"></script>
+</body>
+</html>
