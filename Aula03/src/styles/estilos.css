@@ -71,10 +71,16 @@ body {
 
 #listagemContatos {
   font-family: "padrao";
-  padding: 10px;
-  border: 1px solid #5cc1d8;
-  width: 95%;
+  margin-top: 20px;
+}
+#listagemContatos table {
+  border-collapse: collapse;
   margin: auto;
+  width: 95%;
+}
+#listagemContatos thead {
+  background-color: #428bc7;
+  color: white;
 }
 
 /*# sourceMappingURL=estilos.css.map */

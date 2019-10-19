@@ -1,11 +1,11 @@
 function imc(event){
     event.preventDefault();
-    var altura = parseFloat(document.getElementById('altura').value);    
-    var peso = parseFloat(document.getElementById('peso').value);
-    var resposta = document.getElementById('resposta');
+    let altura = parseFloat(document.getElementById('altura').value);    
+    let peso = parseFloat(document.getElementById('peso').value);
+    let resposta = document.getElementById('resposta');
     resposta.innerHTML = "";
     resposta.style.display = "block"; 
-    var imc = peso / (altura*altura);
+    let imc = peso / (altura*altura);
     imc = imc.toFixed(2);
     if(imc <18.50){
         resposta.innerHTML = "IMC: " +imc+ "<br>Abaixo do peso.";

@@ -1,18 +1,18 @@
 function fibonacci(event){
    event.preventDefault();
-   var termo = parseInt(document.getElementById('valor').value);
-   var resposta = document.getElementById('resposta');
-   var penultimo = 0, ultimo = 1;
-   var numero = 1;
+   let valor = parseInt(document.getElementById('valor').value);
+   let resposta = document.getElementById('resposta');
+   let penultimo = 0, ultimo = 1;
+   let numero = 1;
    resposta.innerHTML = "";
    resposta.style.display = "block";
-   if( termo==1){
+   if( valor==1){
       resposta.innerHTML+= 0+".";
-   }else if(termo==2){
+   }else if(valor==2){
       resposta.innerHTML+= 0 + " e "+numero+".";
    }else{
       resposta.innerHTML+= 0 + ", ";
-      for(var i=3 ; i<=termo; i++){
+      for(let i=3 ; i<=valor; i++){
          resposta.innerHTML+= numero + ", ";
          numero = ultimo + penultimo;
          penultimo = ultimo;
