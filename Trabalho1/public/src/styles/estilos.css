@@ -152,6 +152,10 @@ body {
     width: 70%;
     text-align: left;
   }
+
+  #texto {
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
