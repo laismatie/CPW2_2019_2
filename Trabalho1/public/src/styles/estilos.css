@@ -53,6 +53,7 @@ body {
   text-align: center;
 }
 #container #exercicio {
+  border-radius: 5px;
   text-decoration: none;
   padding: 10px;
 }
@@ -92,6 +93,7 @@ body {
   margin-top: 10px;
   background-color: #eceff1;
   font-family: "padrao";
+  border-radius: 5px;
 }
 #formularioExercicio label, #formularioExercicio input {
   display: block;
@@ -135,6 +137,7 @@ body {
   background-color: #eceff1;
   font-family: "padrao";
   display: none;
+  border-radius: 5px;
 }
 
 @media (max-width: 700px) {
