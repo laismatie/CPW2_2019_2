@@ -4,10 +4,34 @@
  //vetor vazio, sempre inicializar quando for trabalhar com ele depois */
 var contatos = [
     {
-       nome: 'Lais',
-       telefone: '00000000000',
+       nome: 'Lais Matie Mori Hara',
+       telefone: '(67) 99690-2502',
        email: 'lais@email.com',
        dataNascimento:'23/07/2000'
+    },
+    {
+        nome: 'Sidney Roberto ',
+        telefone: '(67) 96770-2502',
+        email: 'sidneyifms@email.com',
+        dataNascimento:'12/01/1987'
+    },
+    {
+        nome: 'Lucas Negri',
+        telefone: '(67) 99803-0023',
+        email: 'lucasnegri@email.com',
+        dataNascimento:'03/11/1990'
+    },
+    {
+        nome: 'Anastácia Menezes',
+        telefone: '(67) 99234-0987',
+        email: 'anastaciatsi@email.com',
+        dataNascimento:'29/08/1979'
+    },
+    {
+        nome: 'Geovanna Chaves',
+        telefone: '(67) 99706-5577',
+        email: 'geovannachaves@email.com',
+        dataNascimento:'16/11/2000'
     }
 ];
 renderizarTabelaContatos();

@@ -77,12 +77,56 @@ body{
     table{
         border-collapse: collapse;
         //border:1px solid $cor-borda;
-        margin: auto;
+        margin: 0px auto 50px auto;
         width: 95%;
     }
 
     thead{
         background-color: $cor-header;
         color:white;
+    }
+
+    tr{
+        &:hover{
+            td{
+                background-color:rgb(171, 203, 250);
+            }
+        }
+        //Aplicar cor na linha (para melhor acompanhamento)
+        &:nth-child(even){
+            background-color: $cor-fundo-tabela;
+        }
+        
+        td{
+            font-size: 95%;
+        }
+
+        th, td{
+            text-align: center;
+            padding: 5px 0px;
+            //border: 1px solid $cor-botao-primario;
+            
+            /*
+            Regra específica para a primeira coluna
+            */
+            &:first-child{
+                padding-left: 7px;
+                text-align: left;
+            }
+
+            /*
+            Regra específica para a ultima coluna
+            */
+            &:last-child{
+                padding-right: 7px;
+                text-align: right;
+            }
+
+            /*
+            Para pegar uma coluna específica
+                &:nth-child(3){
+                    text-align: left;
+            }*/
+        }
     }
 }

@@ -75,12 +75,44 @@ body {
 }
 #listagemContatos table {
   border-collapse: collapse;
-  margin: auto;
+  margin: 0px auto 50px auto;
   width: 95%;
 }
 #listagemContatos thead {
   background-color: #428bc7;
   color: white;
+}
+#listagemContatos tr:hover td {
+  background-color: #abcbfa;
+}
+#listagemContatos tr:nth-child(even) {
+  background-color: #cfdee7;
+}
+#listagemContatos tr td {
+  font-size: 95%;
+}
+#listagemContatos tr th, #listagemContatos tr td {
+  text-align: center;
+  padding: 5px 0px;
+  /*
+  Regra específica para a primeira coluna
+  */
+  /*
+  Regra específica para a ultima coluna
+  */
+  /*
+  Para pegar uma coluna específica
+      &:nth-child(3){
+          text-align: left;
+  }*/
+}
+#listagemContatos tr th:first-child, #listagemContatos tr td:first-child {
+  padding-left: 7px;
+  text-align: left;
+}
+#listagemContatos tr th:last-child, #listagemContatos tr td:last-child {
+  padding-right: 7px;
+  text-align: right;
 }
 
 /*# sourceMappingURL=estilos.css.map */
