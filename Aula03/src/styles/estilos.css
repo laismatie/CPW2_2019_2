@@ -69,29 +69,29 @@ body {
   color: white;
 }
 
-#listagemContatos {
+#tabelaContatos {
   font-family: "padrao";
   margin-top: 20px;
 }
-#listagemContatos table {
+#tabelaContatos table {
   border-collapse: collapse;
   margin: 0px auto 50px auto;
   width: 95%;
 }
-#listagemContatos thead {
+#tabelaContatos thead {
   background-color: #428bc7;
   color: white;
 }
-#listagemContatos tr:hover td {
+#tabelaContatos tr:hover td {
   background-color: #abcbfa;
 }
-#listagemContatos tr:nth-child(even) {
+#tabelaContatos tr:nth-child(even) {
   background-color: #cfdee7;
 }
-#listagemContatos tr td {
+#tabelaContatos tr td {
   font-size: 95%;
 }
-#listagemContatos tr th, #listagemContatos tr td {
+#tabelaContatos tr th, #tabelaContatos tr td {
   text-align: center;
   padding: 5px 0px;
   /*
@@ -106,11 +106,11 @@ body {
           text-align: left;
   }*/
 }
-#listagemContatos tr th:first-child, #listagemContatos tr td:first-child {
+#tabelaContatos tr th:first-child, #tabelaContatos tr td:first-child {
   padding-left: 7px;
   text-align: left;
 }
-#listagemContatos tr th:last-child, #listagemContatos tr td:last-child {
+#tabelaContatos tr th:last-child, #tabelaContatos tr td:last-child {
   padding-right: 7px;
   text-align: right;
 }
