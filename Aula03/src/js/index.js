@@ -4,7 +4,7 @@
  //vetor vazio, sempre inicializar quando for trabalhar com ele depois */
 var contatos = [
     {
-       nome: 'Lais Matie Mori Hara',
+       nome: 'Laís Matie Mori Hara',
        telefone: '(67) 99690-2502',
        email: 'lais@email.com',
        dataNascimento:'23/07/2000'
