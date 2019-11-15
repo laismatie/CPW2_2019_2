@@ -135,6 +135,7 @@ body{
 #cardsContatos{
     padding: 5px 0px;
     display: none;
+    margin-top: 20px;
 
     //Cada div representa um card
     div{
@@ -177,6 +178,29 @@ body{
     }
 }
 
+/*
+    Campo de filtro
+*/
+#filtro{
+    margin: 25px auto 0px auto;
+    display: block;
+    border-radius: 20px;
+    width: 50%;
+    height: 38px;
+    text-indent: 20px; //jogar mesmo valor do raio de borda
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 95%;
+
+    &:hover{
+        border:none;
+        box-shadow: 2px 2px 5px #ccc,
+                    -2px -2px 4px #ccc;
+    }
+}
+
+/*Exemplos: 600, 768*/
+//pode deixar em uma folha separada também
 @media only screen and (max-width: 600px){
     #cardsContatos{
         display: block;
@@ -185,7 +209,16 @@ body{
         display: none;
     }
     #formularioContato{
-        width: 90%;
+        width: 88%;
+        input{
+            &[type=text],&[type=email]{
+                width: 250px;
+            }
+        }
     }
-    
+
+    #filtro{
+        width: 85%;
+        font-size: 100%;
+    }
 }

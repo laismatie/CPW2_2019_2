@@ -118,6 +118,7 @@ body {
 #cardsContatos {
   padding: 5px 0px;
   display: none;
+  margin-top: 20px;
 }
 #cardsContatos div {
   border: 1px solid #5cc1d8;
@@ -152,6 +153,26 @@ body {
   margin-right: 3px;
 }
 
+/*
+    Campo de filtro
+*/
+#filtro {
+  margin: 25px auto 0px auto;
+  display: block;
+  border-radius: 20px;
+  width: 50%;
+  height: 38px;
+  text-indent: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 95%;
+}
+#filtro:hover {
+  border: none;
+  box-shadow: 2px 2px 5px #ccc, -2px -2px 4px #ccc;
+}
+
+/*Exemplos: 600, 768*/
 @media only screen and (max-width: 600px) {
   #cardsContatos {
     display: block;
@@ -162,7 +183,15 @@ body {
   }
 
   #formularioContato {
-    width: 90%;
+    width: 88%;
+  }
+  #formularioContato input[type=text], #formularioContato input[type=email] {
+    width: 250px;
+  }
+
+  #filtro {
+    width: 85%;
+    font-size: 100%;
   }
 }
 
