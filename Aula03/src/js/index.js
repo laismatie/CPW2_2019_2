@@ -1,39 +1,30 @@
 /**
  * Nosso BD fake! (in memory DB)
- * 
- //vetor vazio, sempre inicializar quando for trabalhar com ele depois */
-var contatos = [
-    {
-       nome: 'Laís Matie Mori Hara',
-       telefone: '(67) 99690-2502',
-       email: 'lais@email.com',
-       dataNascimento:'23/07/2000'
-    },
-    {
-        nome: 'Sidney Roberto ',
-        telefone: '(67) 96770-2502',
-        email: 'sidneyifms@email.com',
-        dataNascimento:'12/01/1987'
-    },
-    {
-        nome: 'Lucas Negri',
-        telefone: '(67) 99803-0023',
-        email: 'lucasnegri@email.com',
-        dataNascimento:'03/11/1990'
-    },
-    {
-        nome: 'Anastácia Menezes',
-        telefone: '(67) 99234-0987',
-        email: 'anastaciatsi@email.com',
-        dataNascimento:'29/08/1979'
-    },
-    {
-        nome: 'Geovanna Chaves',
-        telefone: '(67) 99706-5577',
-        email: 'geovannachaves@email.com',
-        dataNascimento:'16/11/2000'
-    }
-];
+ */
+
+//Cria o objeto lais
+let lais = new Contato(
+    'Laís Matie Mori Hara','(67) 99690-2502',
+    'lais@email.com','23/06/2000');
+
+let sidney = new Contato(
+    'Sidney Roberto','(67) 96770-2502',
+    'sidneyifms@email.com','12/01/1987');
+
+let lucas = new Contato(
+    'Lucas Negri','(67) 99803-0023',
+    'lucasnegri@email.com','03/11/1990');
+
+let geovanna = new Contato(
+    'Geovanna Chaves','(67) 99706-5577',
+    'geovannachaves@email.com','16/11/2000');
+
+let anastacia = new Contato(
+    'Anastácia Menezes','(67) 99234-0987',
+    'anastaciatsi@email.com','29/08/1979');
+
+//vetor vazio, sempre inicializar quando for trabalhar com ele depois */
+var contatos = [lais, sidney, lucas, geovanna, anastacia];
 renderizarTabelaContatos(contatos);
 renderizarCardsContatos(contatos);
 
