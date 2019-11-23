@@ -21,7 +21,7 @@
     <div id="formularioContato">
         <!--tratar da submissão do formulário onsubmit-->
          <!--variável event, oculta, guarda dados do evento do formulário-->
-        <form onsubmit="salvarContato(event)">
+        <form onsubmit="contatoView.salvarContato(event)">
             <label for="nome">Nome:</label>
             <!--input não precisa de tag de fechamento
             para tornar obrigatório: required, se não tiver a proprieda o browser 
@@ -42,13 +42,15 @@
             <input type="submit" value="Salvar">
         </form>
     </div>  
-    <input onkeyup="filtrarContatos()" placeholder="Digite o nome ou e-mail" type="text" id="filtro">  
+    <!--Ao soltar a tecla-->
+    <input onkeyup="contatoView.filtrarContatos()" placeholder="Digite o nome ou e-mail" type="text" id="filtro">  
     <div id="cardsContatos"></div><!--Visualização mobile-->
     <div id="tabelaContatos"></div><!--Visualização desktop-->
    
 
 <!--Arquivos internos no final, externos no começo-->
     <script src="src/js/models/Contato.js"></script>
+    <script src="src/js/views/ContatoView.js"></script>
     <script src="src/js/mascaras.js"></script>
     <script src="src/js/index.js"></script>
 </body>
