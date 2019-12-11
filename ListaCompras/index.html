@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/styles/estilos.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-png">
+    <title>Lista de Compras</title>
+</head>
+
+<body>
+    <div id="header">
+        <img src="src/img/logo.png" alt="Logo">
+        <h1>Lista de Compras</h1>
+    </div>
+    <div id="formularioAdicionarItem">
+        <form onsubmit="listaView.adicionarItem(event)">
+            <label for="item">Item:</label>
+            <select onchange="adicionarUnidade()" required id="item" name="item" type="text"></select>
+
+            <label for="quantidade">Quantidade:</label>
+            <input required id="quantidade" type="number" min="1" name="quantidade" id="quantidade"><span
+                id="unidadeMedida"></span>
+
+            <input type="submit" value="Adicionar">
+        </form>
+    </div>
+    <div id="minhaLista">
+        <h1>Minha Lista</h1>
+        <span></span>
+        <div id="filtragem">
+        <input onkeyup="listaView.filtrarItens()" placeholder="Digite o nome do produto" type="text" id="filtro"></div>
+    </div>
+
+    <div id="listaProdutos"></div>
+
+    <script src="src/js/models/Item.js"></script>
+    <script src="src/js/views/ListaView.js"></script>
+    <script src="src/js/controllers/ListaController.js"></script>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

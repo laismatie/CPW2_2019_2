@@ -1,0 +1,148 @@
+@import 'cores';
+@import 'fontes';
+
+body{
+    margin:0;
+    background-color: #e9f0f8;
+}
+
+#header{
+    background-color: $cor-header;
+    font-family: $fonte-decorativa;
+    color: white;
+    padding: 20px 30px; 
+    text-align: center;
+    
+    *{
+        display: inline;
+        vertical-align: middle;
+    }
+    img{
+        width: 80px;
+        margin-right: 20px;
+    }
+}
+
+#formularioAdicionarItem{
+    padding: 10px;
+    width: 95%;
+    margin: auto;
+
+    *{
+        outline: none;
+    }
+
+    label{
+        font-weight: bold;
+        font-size: 105%;
+        margin: 10px 0px;
+    }
+
+    label, input{
+        display: block;
+        font-family: $fonte-padrao;
+    }
+    input{
+        margin-bottom: 10px;
+       
+        height: 25px;
+        font-size: 100%;
+        /*Opcional*/
+        border-radius: 5px;
+        border: 1px solid #aaaaaa;
+        padding-left: 5px;
+
+        &[type=number]{
+            width: 65px;
+            height: 25px;
+            display: inline;
+        }
+        &[type=submit]{
+            padding: 10px 20px;
+            margin-top: 15px;
+            height: inherit;
+            background-color: $cor-botao;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    select{
+        width: 200px;
+        height: 30px;
+        font-size: 100%;
+        border-radius: 5px;
+        font-family: $fonte-padrao;
+    }
+    #unidadeMedida{
+        font-family: $fonte-decorativa;
+        font-size: 110%;
+        display: inline;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}
+
+#minhaLista{
+    display: none;
+    *{
+        font-family: $fonte-padrao;
+    }
+    h1{
+        background-color: $cor-header;
+        font-family: $fonte-decorativa;
+        color: white;
+        text-align: center;
+        padding: 8px;
+    }
+    #filtragem{
+        text-align: center;
+        margin-bottom: 20px;
+        input{
+            margin: auto;
+            display: inline;
+            border-radius: 60px;
+            height: 30px;
+            width: 280px;
+            border: 1px solid #cccccc;
+            outline: none;
+            text-indent: 20px;
+            font-size: 100%;
+        
+            &:hover {
+                border: none;
+                box-shadow: 1px 1px 3px #dddddd,
+                    -1px -1px 3px #dddddd;
+            }
+        }
+    }
+
+}
+
+#tabelaProdutos{
+    margin: auto;
+}
+
+#listaProdutos{
+    font-family: $fonte-padrao;
+    font-weight: bold;
+    font-size: 100%;
+
+    img{
+        width: 40px;
+    }
+    tr{
+        margin: 10px 50px;
+    }
+    td{
+        margin: 0px 20px 0px 20px;
+        padding:5px 20px 5px 20px;
+    }
+    span{
+        margin: 0px 20px;
+        font-size: 110%;
+        font-weight: bold;
+    }
+
+}

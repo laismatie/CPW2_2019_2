@@ -14,8 +14,8 @@ body {
 
 #header {
   background-color: #428bc7;
-  padding: 10px 20px;
-  margin-bottom: 10px;
+  padding: 30px 70px;
+  margin-bottom: 0px;
 }
 #header * {
   display: inline;
@@ -35,7 +35,7 @@ body {
   padding: 10px;
   border: 1px solid #5cc1d8;
   width: 95%;
-  margin: auto;
+  margin: 0px 50px;
 }
 #formularioContato label, #formularioContato input {
   display: block;

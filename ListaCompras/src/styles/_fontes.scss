@@ -1,0 +1,18 @@
+@font-face{
+    font-family: "decorativa";
+    src: url(../fonts/Dekko-Regular.ttf);
+}
+
+@font-face{
+    font-family: "padrao";
+    src: url(../fonts/Oxygen-Regular.ttf);
+}
+
+@font-face{
+    font-family: "decorativa2";
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+$fonte-decorativa:"decorativa";
+$fonte-padrao: "padrao";
+$fonte-decorativa2: "decorativa2";
