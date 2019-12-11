@@ -144,4 +144,40 @@ body {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 600px) {
+  #header {
+    text-align: center;
+    font-size: 90%;
+    padding: 10px;
+  }
+  #header img {
+    width: 50px;
+    margin: 0px 5px 0px 0px;
+  }
+
+  #listaProdutos {
+    text-align: center;
+    margin: auto;
+    padding: 15px 20px 0px 20px;
+  }
+  #listaProdutos span {
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #formularioAdicionarItem {
+    text-align: center;
+  }
+  #formularioAdicionarItem input[type=submit] {
+    text-align: center;
+    margin: 10px auto 0px auto;
+  }
+
+  #minhaLista {
+    font-size: 90%;
+    padding: 10px;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */
